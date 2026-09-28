@@ -16,4 +16,19 @@
 
 @media(max-width:760px){.section-title{font-size:clamp(23px,6.9vw,27px)}.page-heading h1{font-size:clamp(24px,7.5vw,30px)}}
 
-.hero-visual img{object-position:70% 72%}
+/* Keep the client's longer headline and new photographs readable without clipping. */
+.hero h1{font-size:clamp(27px,3.3vw,46px);letter-spacing:.04em}
+.hero h1 small{font-size:.52em;font-weight:inherit;letter-spacing:0}
+.hero-visual{max-width:440px;margin-inline:auto}
+.hero-visual img{height:auto;aspect-ratio:3/4;object-position:center;border-radius:70px 70px 8px 8px}
+.profile-image img{height:auto;aspect-ratio:4/3;object-position:center;border-radius:8px 8px 55px 8px}
+.profile-activities{padding-left:1.3em;margin:15px 0;font-size:16px;line-height:2}
+.profile-activities li+li{margin-top:8px}
+.care-photo{height:auto;aspect-ratio:4/3;object-position:center}
+.lecture-photo{height:auto;aspect-ratio:16/9;object-position:center 40%}
+.activity-section{padding-top:0}
+.activity-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:42px 32px;margin-top:35px}
+.activity-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center top;border-radius:8px 40px 8px 8px}
+.activity-gallery figcaption{font-family:var(--serif);font-size:22px;line-height:1.8;margin-top:15px}
+.activity-gallery figcaption span{display:block;font-family:var(--sans);font-size:14px;color:var(--muted);margin-top:4px}
+@media(max-width:760px){.hero h1{font-size:clamp(25px,6.5vw,42px)}.hero-copy>p br{display:none}.hero-visual{max-width:380px}.hero-visual img{border-radius:55px 55px 8px 8px}.activity-gallery{grid-template-columns:1fr;gap:30px;margin-top:25px}.activity-gallery figcaption{font-size:21px}.activity-gallery img{border-radius:7px 35px 7px 7px}}
