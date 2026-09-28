@@ -21,7 +21,7 @@
 .hero h1 small{font-size:.52em;font-weight:inherit;letter-spacing:0}
 .hero-visual{max-width:440px;margin-inline:auto}
 .hero-visual img{height:auto;aspect-ratio:3/4;object-position:center;border-radius:70px 70px 8px 8px}
-.profile-image img{height:auto;aspect-ratio:4/3;object-position:center;border-radius:8px 8px 55px 8px}
+.profile-image img{height:auto;aspect-ratio:4/3;object-position:center top;border-radius:8px 8px 55px 8px}
 .profile-activities{padding-left:1.3em;margin:15px 0;font-size:16px;line-height:2}
 .profile-activities li+li{margin-top:8px}
 .care-photo{height:auto;aspect-ratio:4/3;object-position:center}
