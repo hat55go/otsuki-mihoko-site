@@ -32,3 +32,9 @@
 .activity-gallery figcaption{font-family:var(--serif);font-size:22px;line-height:1.8;margin-top:15px}
 .activity-gallery figcaption span{display:block;font-family:var(--sans);font-size:14px;color:var(--muted);margin-top:4px}
 @media(max-width:760px){.hero h1{font-size:clamp(25px,6.5vw,42px)}.hero-copy>p br{display:none}.hero-visual{max-width:380px}.hero-visual img{border-radius:55px 55px 8px 8px}.activity-gallery{grid-template-columns:1fr;gap:30px;margin-top:25px}.activity-gallery figcaption{font-size:21px}.activity-gallery img{border-radius:7px 35px 7px 7px}}
+
+/* Preserve the requested title, lead, and body size hierarchy. */
+.lecture-request{--request-title-size:34px}
+.lecture-request .section-title{font-size:var(--request-title-size);margin-bottom:18px}
+.lecture-request-lead{font-family:var(--serif);font-size:calc((var(--request-title-size) + 16px)/2);line-height:1.8;letter-spacing:.06em;margin-bottom:20px}
+@media(max-width:760px){.lecture-request{--request-title-size:clamp(23px,6.9vw,27px)}}
